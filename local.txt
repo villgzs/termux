@@ -1,0 +1,17 @@
+  PID TTY      STAT   TIME COMMAND
+20626 pts/0    S<s    0:00 /data/data/com.termux/files/usr/bin/bash -l
+20643 ?        S<     0:00 /data/data/com.termux/files/usr/bin/runsvdir /data/data/com.termux/files/usr/var/service
+20644 ?        S<     0:00 runsv mosquitto
+20645 ?        S<     0:00 runsv sshd
+20646 ?        S<     0:00 runsv ssh-agent
+20647 ?        S<     0:00 runsv ftpd
+20648 ?        S<     0:00 runsv busybox-httpd
+20649 ?        S<     0:00 runsv telnetd
+20650 ?        S<     0:00 svlogd -tt /data/data/com.termux/files/usr/var/log/sv/ftpd
+20651 ?        S<     0:00 busybox tcpsvd -vE 0.0.0.0 8021 busybox ftpd -w /data/data/com.termux/files/home
+20652 ?        S<     0:00 svlogd -tt /data/data/com.termux/files/usr/var/log/sv/busybox-httpd
+20653 ?        S<     0:00 svlogd -tt /data/data/com.termux/files/usr/var/log/sv/ssh-agent
+20654 ?        S<     0:00 svlogd -tt /data/data/com.termux/files/usr/var/log/sv/mosquitto
+20655 ?        S<     0:00 svlogd -tt /data/data/com.termux/files/usr/var/log/sv/telnetd
+20656 ?        S<     0:00 svlogd -tt /data/data/com.termux/files/usr/var/log/sv/sshd
+20675 pts/0    R<+    0:00 ps ax
