@@ -1,0 +1,36 @@
+
+# Loads default set of integrations. Do not remove.
+#default_config:
+
+homeassistant:
+#analytics: false
+zeroconf:
+
+network:
+
+# Csak amit tényleg használsz:
+#frontend:
+config:
+system_health:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+#mqtt:
+#  sensor:
+#    - name: "Tasmota Dimmer (RESULT)"
+#      state_topic: "stat/tasmota_554992/RESULT"
+#      value_template: "{{ value_json.Dimmer }}"
+#      unit_of_measurement: "%"
+#      state_class: measurement
+#      device_class: power_factor
+
+logbook:
+history:
+recorder:
+  purge_keep_days: 60        # Napok száma, ameddig a méréseket megtartja
